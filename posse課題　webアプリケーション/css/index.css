@@ -1,0 +1,632 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  /* プロジェクトによって変動 */
+  /* min-width: 1000px; */
+  color: #000;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', Meiryo, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  /* font-smoothing: antialiased; */
+  font-variant-numeric: tabular-nums;
+  /* safari hover対策 */
+  -webkit-font-smoothing: antialiased;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ul, ol {
+  list-style: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  vertical-align: bottom;
+  line-height: 1.0;
+}
+
+/* End of リセット　css */
+
+
+
+
+
+
+
+
+.aaa{
+  color: red !important;
+  margin-bottom: 40px;
+}
+
+/* ここからcss */
+
+.container-a {
+  /* height: 100%; */
+  /* max-width: 574px; */
+  /* height: 100vh; */
+}
+
+.container-box {
+  background-color: #f5f5f8;
+  position: relative;
+}
+.inner {
+  margin: 0 20px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  margin: 0 10px;
+}
+
+.header-img {
+  width:130px;
+  height: 70px;
+}
+
+.header-btn {
+  display: none ;
+
+}
+
+.week {
+  margin: auto 30px;
+  color: #97b9d1;
+}
+
+.time-lists {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.time-list {
+  background-color: #fff;
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-top: 20px;
+  padding: 15px 0;
+  border-radius: 10%;
+  text-align: center;
+  width: 100%;
+}
+
+.time-list>p {
+  margin-bottom: 0;
+}
+
+.today-month-total {
+  color: #0f71bc;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.study-num {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.hour {
+  font-size: 18px;
+  color: #97b9d1;
+}
+.study-items {
+  display: flex;
+  justify-content: center;
+  margin-right: 56px;
+  margin-left: 56px;
+  width: 100%;
+  margin: 20px auto;
+}
+.study-item {
+  border-radius: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 500px;
+}
+.study-item:first-child {
+  margin-right: 16px;
+}
+
+.study-item>h1 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.year-month::before {
+  content: '<';
+  margin: 0 20px;
+  color: #0f71bc;
+}
+
+.year-month::after {
+  margin: 0 20px;
+  content: '>';
+  color: #97b9d1;
+}
+.footer-btn, .modal-btn {
+  background: linear-gradient(#0f71bc, #3ccfff) !important;
+  color: #fff;
+  width: 100%;
+  padding: 15px 3px;
+  font-size: 24px;
+  text-decoration: none;
+  display: block;
+  border-radius: 35px;
+  border: none;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.header-btn {
+  background: linear-gradient(#0f71bc, #3ccfff) !important;
+  color: #fff;
+  width: 240px;
+  font-size: 24px;
+  text-decoration: none;
+  display: none;
+  border-radius: 35px;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 10px 5px;
+}
+hr {
+  margin: 0 25px;
+}
+
+
+
+
+
+
+
+/* // 画面サイズが576px以上に適用 */
+@media (min-width: 576px) {
+  main {
+    display: flex !important;
+  }
+  .container-a {
+    width: 100%;
+  }
+  .header{
+    display: flex;
+    padding: 10px 0;
+    margin: 0 40px;
+  }
+  .header-btn {
+    display: inline-block !important;
+    margin-left: auto;
+  }
+  .header-img {
+    width: 160px;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.study-items{
+  
+}
+.study-item{
+  width: 35%;
+    height: 700px;
+}
+.study-item > h1{
+  font-size: 24px;
+}
+.myBar{
+  /* width: 100%; 
+  height: 300px; */
+}
+
+/* モーダル */
+.modal-dialog{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.modal-content{
+  width: 100% !important; 
+
+}
+.modal-dialog {
+    max-width: 1400px !important;
+    border-radius: 25% !important;
+}
+
+
+.modal-btn{
+  display: none;
+}
+  }
+
+
+
+
+
+  .footer-btn {
+    display: none !important;
+  }
+  hr {
+    display: none;
+  }
+  .study-item {
+    margin-left: 20px;
+  }
+
+
+
+
+/* モーダル */
+.bg-active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal{
+  /* border-radius: 50% !important; */
+}
+
+/* モーダルカレンダー */
+#modal2 , #modal1{
+  margin-top: 60px !important;
+}
+.calender{
+  height: 80vh;
+}
+.calendar-title {
+  text-align: center;
+}
+.calendar-table {
+  margin: 0 auto;
+}
+.is-today {
+  color: red;
+}
+td {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+
+
+/* modal loading */
+
+/* 非表示 */
+.is-hide {
+  display: none;
+}
+/* ローディング画面をフェードアウト */
+.fadeout-bg {
+  transition-property: opacity;
+  transition-delay: .9s;
+  transition-duration: .8s;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ローダーをフェードアウト */
+.fadeout-loader {
+  transition-property: opacity;
+  transition-delay: .9s;
+  transition-duration: .3s;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ローディング画面 */
+#loader-bg {
+  background: #ffffff;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+#loader {
+  height: 120px;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: -60px;
+  position: fixed;
+  top: 50%;
+  width: 120px;
+}
+#loader p {
+  color: #454545;
+  font-size: 10px;
+  line-height: 1.4;
+  text-align: center;
+}
+#loader p img {
+  display: inline-block;
+}
+#modal3{
+  height: 100vh;
+}
+#loader-bg{
+
+  height: 100vh;
+}
+.content-1{
+  height: 90vh;
+
+}
+
+
+
+
+@keyframes fadeIn {
+  /*animetion-nameで設定した値を書く*/
+  0% {
+    opacity: 0
+  }
+  /*アニメーション開始時は不透明度0%*/
+  100% {
+    opacity: 1
+  }
+  /*アニメーション終了時は不透明度100%*/
+}
+/*
+.js-display-block {
+  display: block !important;
+}
+
+.input-study-day {
+  background-color: #f5f5f8;
+}
+
+.check-box {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 35px;
+  border: none;
+  text-decoration: none;
+  background-color: #f5f5f8;
+}
+
+
+.awesome-img{
+  width: 200px;
+  height: 100%;
+}
+.container-awesome{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 300px;
+  align-items: center;
+  display: none;
+  z-index: 16;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 560px;
+}
+.awesome{
+  color: #bde360;
+  font-size: 24px;
+}
+.text{
+  margin: 0;
+  font-size: 27px;
+} */
+
+
+
+
+
+
+/* モーダルCSSここから */
+.modalArea {
+  visibility: hidden; /* displayではなくvisibility */
+  opacity : 0;
+  position: fixed;
+  z-index: 10; /* サイトによってここの数値は調整 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .4s;
+}
+
+.modalBg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30,30,30,0.9);
+}
+
+.modalWrapper {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  width: 100%;
+  height: 700px;
+  max-width: 1000px;
+  padding: 10px 30px;
+  background-color: #fff;
+}
+
+.closeModal {
+  position: absolute;
+  top: 0%;
+  right: 10%;
+  cursor: pointer;
+}
+
+.is-show { /* モーダル表示用クラス */
+  visibility: visible;
+  opacity : 1;
+}
+
+.modalContents{
+  margin: 0 10px;
+  /* width: 100%; */
+}
+
+input[type=checkbox] {
+  display: none; /* checkboxを非表示にする */
+}
+.check{
+  background-color: #f4f4f7;
+  padding: 3px 8px ;
+  margin-right: 10px;
+  border-radius: 30px;
+}
+
+.wrapper {
+  /* この要素はflexコンテナとなり、子要素は自動的にflexアイテムとなる */
+  display: flex;
+  /* 横並びに表示する */
+  flex-direction: row;
+  /* 画面幅に収まらない場合は折り返す */
+  flex-wrap: wrap;
+}
+
+.text{
+  width:330px;
+  border-radius: 10px;
+  height:40px;
+  background-color: #f4f4f7;
+  border: none;
+}
+
+.twitter-text{
+  height:100px; 
+}
+
+
+/* モーダルCSSここまで */
+
+.checkbox {
+  display: none;
+}
+.checkbox-fontas {
+  position: relative;
+  vertical-align: middle;
+  font-size: 21px;
+}
+.checkbox + .checkbox-fontas:before {
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  content: '\f058';
+  color: #ccc;
+}
+.checkbox:checked + .checkbox-fontas:before  {
+  color: #2db29c;
+}
+.is-check{
+  background-color: #2db29c;
+}
+
+
+/* ----------------loading----------- */
+body {
+  /* margin: 0;
+  padding: 0; */
+}
+.loading {
+  position: fixed;
+  z-index: -1000;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.loading.hide {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 5s;
+}
+.loading .circle {
+  display: block;
+  position: relative;
+  top: calc( 45% - 20px );
+  left: -10%;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border: 7px solid #444444;
+  border-top: 7px solid #5ae1e5;
+  border-radius: 50px;
+  animation: loading 700ms linear 0ms infinite normal both;
+}
+@keyframes loading {
+  0% { transform: rotate( 0deg ); }
+  100% { transform: rotate( 360deg ); }
+}
+
+
+
+/* ------投稿完了モーダル--------- */
+.record-completed{
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 38%;
+}
+.awesome{
+  color: #BFE263;
+}
+.checked-box{
+  background-color: #BFE263;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.checked-p{
+  color: white;
+  font-size: 45px;
+  margin: 0;
+  position: relative;
+}
+.checked-p::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  width: 40px;
+  height: 20px;
+  border-left: 4px solid white;
+  border-bottom: 4px solid white;
+  transform: rotate(-45deg);
+}

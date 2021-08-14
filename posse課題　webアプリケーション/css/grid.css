@@ -1,0 +1,207 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  /* プロジェクトによって変動 */
+  /* min-width: 1000px; */
+  color: #000;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', Meiryo, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  /* font-smoothing: antialiased; */
+  font-variant-numeric: tabular-nums;
+  /* safari hover対策 */
+  -webkit-font-smoothing: antialiased;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ul, ol {
+  list-style: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  vertical-align: bottom;
+  line-height: 1.0;
+}
+
+/* End of リセット　css */
+
+
+
+
+
+
+
+
+/* ここからcss */
+
+body{
+  width: auto;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template: 
+  "...    ..........     ...........     ...........    ...........    ...........     ..." 0
+  "...      header         header         header          header          header       ..." 64px 
+  "...    ..........     ...........     ...........    ...........    ...........     ..." 20px 
+  "...    time-lists     time-lists      time-lists     time-lists     time-lists      ..." 138px
+  "...    ...........    ...........     ...........    ...........    ...........     ..." 20px
+  "...    study-graph    study-graph     study-graph    study-graph    study-graph     ..." 425px
+  "...    ...........    ...........     ...........    ...........    ...........     ..." 20px
+  "...    study-items    study-items     study-items    study-items    study-items     ..." 490px
+  "...    ...........    ...........     ...........    ...........    ...........     ..." 20px 
+  "...      footer          footer         footer         footer         footer        ..." 120px  
+  "...    ...........    ...........     ...........    ...........    ...........     ..." 20px 
+  /auto       10px           auto         auto          auto            105px        auto 
+  ; 
+}
+
+.header{
+  grid-area: header;
+  background-color: aqua;
+  display: grid;
+  grid-template: 
+  " ... header-img   week header-btn ..." auto
+  /0  200px      150px   10px     0
+  ;
+}
+.header-img{
+  grid-area: header-img;
+}
+.week{
+  grid-area: week;
+}
+.header-btn{
+  grid-area: header-btn;
+}
+
+.time-lists{
+  grid-area: time-lists;
+  background-color: red;
+}
+
+.study-graph{
+  grid-area: study-graph;
+  background-color: cadetblue;
+}
+
+.study-items{
+  grid-area: study-items;
+  background-color: wheat;
+}
+
+footer{
+  grid-area: footer;
+  background-color: khaki;
+}
+
+
+.header-img{
+  width: 170px; 
+  height: 90%;
+}
+
+
+
+
+
+
+/* modal loading */
+
+/* 非表示 */
+.is-hide {
+  display: none;
+}
+/* ローディング画面をフェードアウト */
+.fadeout-bg {
+  transition-property: opacity;
+  transition-delay: .9s;
+  transition-duration: .8s;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ローダーをフェードアウト */
+.fadeout-loader {
+  transition-property: opacity;
+  transition-delay: .9s;
+  transition-duration: .3s;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ローディング画面 */
+#loader-bg {
+  background: #ffffff;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+#loader {
+  height: 120px;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: -60px;
+  position: fixed;
+  top: 50%;
+  width: 120px;
+}
+#loader p {
+  color: #454545;
+  font-size: 10px;
+  line-height: 1.4;
+  text-align: center;
+}
+#loader p img {
+  display: inline-block;
+}
+#modal3{
+  height: 100vh;
+}
+#loader-bg{
+
+  height: 100vh;
+}
+.content-1{
+  height: 90vh;
+
+}
+
+
+
+
+@keyframes fadeIn {
+  /*animetion-nameで設定した値を書く*/
+  0% {
+    opacity: 0
+  }
+  /*アニメーション開始時は不透明度0%*/
+  100% {
+    opacity: 1
+  }
+  /*アニメーション終了時は不透明度100%*/
+}
+/*
